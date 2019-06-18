@@ -47,5 +47,11 @@ Because of the inheritance mentioned above, JpaRepository will have all the func
 So if you don't need the repository to have the functions provided by JpaRepository and PagingAndSortingRepository , use CrudRepository.
 
 Reference:
-https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Properies ->      https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+JPA Methods ->    https://docs.spring.io/spring-data/jpa/docs/current/reference/html/  search : table 3
+JpaRepository ->  https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html
+Sort Properties-> https://stackoverflow.com/questions/33018127/spring-data-rest-sort-by-multiple-properties
+
+
 
