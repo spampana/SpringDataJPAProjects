@@ -16,17 +16,21 @@ b)It provides you with methods that allow you to perform some common operations 
   
 When talking about the differences of CrudRepository and JpaRepository, it is a good idea to take a third interface into account: the PagingAndSortingRepository. This is because these interfaces the following inheritance hierarchy between them:
 
-<strong>
+
  PagingAndSortingRepository extends CrudRepository
  <br/>
  JpaRepository extends PagingAndSortingRepository
-</strong>
 
-The CrudRepository interface provides methods for CRUD operations, so it allows you to create, read, update and delete records without having to define your own methods. The PagingAndSortingRepository provides additional methods to retrieve entities using pagination and sorting. Finally the JpaRepository add some more functionality that is specific to JPA.
+
+The CrudRepository interface provides methods for CRUD operations, so it allows you to create, read, update and delete records without having to define your own methods. 
+
+The PagingAndSortingRepository provides additional methods to retrieve entities using pagination and sorting. 
+
+Finally the JpaRepository add some more functionality that is specific to JPA.
 
 Generally the best idea is to use CrudRepository or PagingAndSortingRepository depending on whether you need sorting and paging or not. The JpaRepository should be avoided if possible, because it ties you repositories to the JPA persistence technology, and in most cases you probably wouldn’t even use the extra methods provided by it.
 
-
+______________________________________________________________________________________________________________________________________
 
 
 JpaRepository extends PagingAndSortingRepository which in turn extends CrudRepository.
