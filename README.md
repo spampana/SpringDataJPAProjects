@@ -45,3 +45,7 @@ JpaRepository provides some JPA-related methods such as flushing the persistence
 
 Because of the inheritance mentioned above, JpaRepository will have all the functions of CrudRepository and PagingAndSortingRepository. 
 So if you don't need the repository to have the functions provided by JpaRepository and PagingAndSortingRepository , use CrudRepository.
+
+Reference:
+https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
