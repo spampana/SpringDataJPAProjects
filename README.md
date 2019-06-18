@@ -12,7 +12,7 @@ a)Extending these interfaces allows Spring to find your repository interfaces an
 
 b)It provides you with methods that allow you to perform some common operations without the need to declare these methods yourself.
 
-<b>Differences<b>
+<b>Differences</b>
   
 When talking about the differences of CrudRepository and JpaRepository, it is a good idea to take a third interface into account: the PagingAndSortingRepository. This is because these interfaces the following inheritance hierarchy between them:
 
