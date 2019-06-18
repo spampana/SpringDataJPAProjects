@@ -1,18 +1,26 @@
 
-This article explains the differences between the Spring Data JPA CrudRepository and JpaRepository interfaces. Both of them can be used as the parent interface for our repositories, but they are not the same.
+This article explains the differences between the Spring Data JPA CrudRepository and JpaRepository interfaces. 
+Both of them can be used as the parent interface for our repositories, but they are not the same.
 
-Background
+<b>Background</b>
 
-Before we jump into the differences, it’s good to know why are we using these interfaces in the first place. There are two reasons for that:
+Before we jump into the differences, it’s good to know why are we using these interfaces in the first place. 
 
-Extending these interfaces allows Spring to find your repository interfaces and create proxy objects for them, that you can inject later on into your beans.
-It provides you with methods that allow you to perform some common operations without the need to declare these methods yourself.
+There are two reasons for that:
 
-Differences
+a)Extending these interfaces allows Spring to find your repository interfaces and create proxy objects for them, that you can inject later on into your beans.
+
+b)It provides you with methods that allow you to perform some common operations without the need to declare these methods yourself.
+
+<b>Differences<b>
+  
 When talking about the differences of CrudRepository and JpaRepository, it is a good idea to take a third interface into account: the PagingAndSortingRepository. This is because these interfaces the following inheritance hierarchy between them:
 
-PagingAndSortingRepository extends CrudRepository
-JpaRepository extends PagingAndSortingRepository
+<strong>
+ PagingAndSortingRepository extends CrudRepository
+ <br/>
+ JpaRepository extends PagingAndSortingRepository
+</strong>
 
 The CrudRepository interface provides methods for CRUD operations, so it allows you to create, read, update and delete records without having to define your own methods. The PagingAndSortingRepository provides additional methods to retrieve entities using pagination and sorting. Finally the JpaRepository add some more functionality that is specific to JPA.
 
