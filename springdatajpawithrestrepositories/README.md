@@ -1,9 +1,10 @@
 
-
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-data-rest</artifactId>
-</dependency>
+<pre>
+&lt;dependency&gt;
+	&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+	&lt;artifactId&gt;spring-boot-starter-data-rest&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</pre>
 
 spring-boot-starter-data-rest will provide all the retrival functions inbuilt.
 we have functionality like sorting,pagination and limit records apart from regular CRUD Operations
